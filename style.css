@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Inter:wght@200;400&family=Montserrat:wght@100;400;600&family=Mulish&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,400&family=Poppins&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Signup page css */
+body{
+    height: 100vh;
+    background: linear-gradient(15deg, #ffffff 50%, #F8FAFC 50%);
+    overflow: hidden;
+}
+.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(15deg, #5bf7db 0%, #5bf7db 20%, transparent 20%, transparent 80%, #5bf7db 80%, #5bf7db 100%);
+    transform: translateY(-50%) rotate(15deg);
+    z-index: -2;
+}
+#sign-up{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #F8FAFC; */
+    height: 100vh;
+    width: 100vw;
+}
+
+#sign-up p a{
+    text-decoration: none;
+}
+#color{
+    color: #757575;
+}
+#form{
+    background-color: white;
+    height: 537px;
+    width: 444px;
+    display: inherit;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 5px;
+    padding-left: 5rem;
+    box-shadow: 0 0 50px #ccc;
+    padding-top: 20px;
+
+}
+#form input[type=text],input[type=email],input[type=password]{
+    width: 352px;
+    height: 36px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: 1px solid #dedede;
+}
+#form button{
+    width: 360px;
+    height: 55.8px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    background: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+#error-message{
+    margin-top: 10px;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 18px;
+    color: rgba(98, 91, 247, 1);
+    padding-left: 3.5rem;
+    padding-bottom: 20px;
+    text-align: start;
+}
+#submit-button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@media (max-width:700px){
+    body{
+        background: linear-gradient(60deg, #ffffff 50%, #F8FAFC 50%);
+    }
+    #form{
+        width: 316px;
+        height: 438px;
+        padding-block: 20px;
+    }
+    #form input[type=text],input[type=email],input[type=password]{
+        width: 250px;
+        height: 32px;
+    }
+    #form button{
+        width: 250px;
+        height: 48px;
+    }
+    .line{
+        background: linear-gradient(60deg, #5bf7db 0%, #5bf7db 20%, transparent 20%, transparent 80%, #5bf7db 80%, #5bf7db 100%); 
+        transform: translateY(-50%) rotate(60deg);  
+    }
+}
+
